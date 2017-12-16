@@ -27,6 +27,13 @@
 		BDA4B29C1FE5462700C0B4BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B29B1FE5462700C0B4BC /* MapViewController.swift */; };
 		BDA4B29E1FE5463B00C0B4BC /* ObjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B29D1FE5463B00C0B4BC /* ObjectDetailsViewController.swift */; };
 		BDA4B2A01FE57C4C00C0B4BC /* DetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA4B29F1FE57C4C00C0B4BC /* DetailsStoryboard.storyboard */; };
+		BDA4B2A21FE58FB500C0B4BC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2A11FE58FB500C0B4BC /* Common.swift */; };
+		BDA4B2A41FE599B700C0B4BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA4B2A31FE599B700C0B4BC /* GoogleService-Info.plist */; };
+		BDA4B2A61FE59BE600C0B4BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2A51FE59BE600C0B4BC /* User.swift */; };
+		BDA4B2A81FE5A20200C0B4BC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2A71FE5A20200C0B4BC /* API.swift */; };
+		BDA4B2AA1FE5A21100C0B4BC /* API+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2A91FE5A21100C0B4BC /* API+Auth.swift */; };
+		BDA4B2AC1FE5A22500C0B4BC /* API+Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2AB1FE5A22500C0B4BC /* API+Feed.swift */; };
+		BDA4B2AF1FE5C4E500C0B4BC /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2AE1FE5C4E500C0B4BC /* Object.swift */; };
 		D7D612FEF4188E115273D9D4 /* Pods_HackForSofia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA84E09BE1976CAC34DBEB8 /* Pods_HackForSofia.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +62,13 @@
 		BDA4B29B1FE5462700C0B4BC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BDA4B29D1FE5463B00C0B4BC /* ObjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetailsViewController.swift; sourceTree = "<group>"; };
 		BDA4B29F1FE57C4C00C0B4BC /* DetailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsStoryboard.storyboard; sourceTree = "<group>"; };
+		BDA4B2A11FE58FB500C0B4BC /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BDA4B2A31FE599B700C0B4BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BDA4B2A51FE59BE600C0B4BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BDA4B2A71FE5A20200C0B4BC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BDA4B2A91FE5A21100C0B4BC /* API+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Auth.swift"; sourceTree = "<group>"; };
+		BDA4B2AB1FE5A22500C0B4BC /* API+Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Feed.swift"; sourceTree = "<group>"; };
+		BDA4B2AE1FE5C4E500C0B4BC /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		FDA84E09BE1976CAC34DBEB8 /* Pods_HackForSofia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackForSofia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				BDA4B2961FE5458100C0B4BC /* Extension */,
+				BDA4B2AD1FE5A23B00C0B4BC /* Networking */,
 				BDA4B2971FE5459900C0B4BC /* Model */,
 				BDA4B2981FE545A300C0B4BC /* CustomViews */,
 				BDA4B2991FE545AF00C0B4BC /* Controllers */,
@@ -107,6 +122,7 @@
 				BD5BBF0A1FE4987F0000FF42 /* Assets.xcassets */,
 				BD5BBF031FE4987F0000FF42 /* art.scnassets */,
 				BD5BBF0F1FE4987F0000FF42 /* Info.plist */,
+				BDA4B2A31FE599B700C0B4BC /* GoogleService-Info.plist */,
 			);
 			path = HackForSofia;
 			sourceTree = "<group>";
@@ -130,6 +146,9 @@
 				BD43EBE21FE5320A00D3FE4F /* LocationManager.swift */,
 				BD43EBDC1FE5320900D3FE4F /* LocationNode.swift */,
 				BD43EBDF1FE5320A00D3FE4F /* SceneLocationEstimate.swift */,
+				BDA4B2A11FE58FB500C0B4BC /* Common.swift */,
+				BDA4B2A51FE59BE600C0B4BC /* User.swift */,
+				BDA4B2AE1FE5C4E500C0B4BC /* Object.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +181,16 @@
 				BDA4B29F1FE57C4C00C0B4BC /* DetailsStoryboard.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BDA4B2AD1FE5A23B00C0B4BC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BDA4B2A71FE5A20200C0B4BC /* API.swift */,
+				BDA4B2A91FE5A21100C0B4BC /* API+Auth.swift */,
+				BDA4B2AB1FE5A22500C0B4BC /* API+Feed.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		DCF77121FEE07C7F4AC11240 /* Pods */ = {
@@ -240,6 +269,7 @@
 				BD5BBF0E1FE4987F0000FF42 /* LaunchScreen.storyboard in Resources */,
 				BD5BBF0B1FE4987F0000FF42 /* Assets.xcassets in Resources */,
 				BD5BBF091FE4987F0000FF42 /* Main.storyboard in Resources */,
+				BDA4B2A41FE599B700C0B4BC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +284,32 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HackForSofia/Pods-HackForSofia-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ARCL/ARCL.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARCL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -306,13 +356,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDA4B2AA1FE5A21100C0B4BC /* API+Auth.swift in Sources */,
+				BDA4B2A21FE58FB500C0B4BC /* Common.swift in Sources */,
 				BD43EBEE1FE5320B00D3FE4F /* SCNNode+Extensions.swift in Sources */,
 				BD43EBE61FE5320B00D3FE4F /* LocationNode.swift in Sources */,
 				BD43EBEA1FE5320B00D3FE4F /* CLLocation+Extensions.swift in Sources */,
 				BDA4B29E1FE5463B00C0B4BC /* ObjectDetailsViewController.swift in Sources */,
 				BD43EBEC1FE5320B00D3FE4F /* LocationManager.swift in Sources */,
 				BD5BBF061FE4987F0000FF42 /* ViewController.swift in Sources */,
+				BDA4B2A61FE59BE600C0B4BC /* User.swift in Sources */,
 				BD5BBF021FE4987F0000FF42 /* AppDelegate.swift in Sources */,
+				BDA4B2AF1FE5C4E500C0B4BC /* Object.swift in Sources */,
 				BD43EBEB1FE5320B00D3FE4F /* SceneLocationEstimate+Extensions.swift in Sources */,
 				BD43EBEF1FE5320B00D3FE4F /* SceneLocationView.swift in Sources */,
 				BD43EBDB1FE531C500D3FE4F /* NotSupportedViewController.swift in Sources */,
@@ -320,6 +374,8 @@
 				BD43EBE91FE5320B00D3FE4F /* SceneLocationEstimate.swift in Sources */,
 				BD43EBE71FE5320B00D3FE4F /* SCNVector3+Extensions.swift in Sources */,
 				BD43EBE81FE5320B00D3FE4F /* FloatingPoint+Radians.swift in Sources */,
+				BDA4B2A81FE5A20200C0B4BC /* API.swift in Sources */,
+				BDA4B2AC1FE5A22500C0B4BC /* API+Feed.swift in Sources */,
 				BDA4B29C1FE5462700C0B4BC /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +519,7 @@
 				INFOPLIST_FILE = HackForSofia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Emil-Iliev.HackForSofia";
+				PRODUCT_BUNDLE_IDENTIFIER = HackForSofia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,7 +536,7 @@
 				INFOPLIST_FILE = HackForSofia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Emil-Iliev.HackForSofia";
+				PRODUCT_BUNDLE_IDENTIFIER = HackForSofia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
