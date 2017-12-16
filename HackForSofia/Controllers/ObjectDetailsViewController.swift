@@ -7,13 +7,30 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ObjectDetailsViewController: UIViewController {
+    
+    var user: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Details"
+        
+        try! Auth.auth().signOut()
 
-        // Do any additional setup after loading the view.
+        Auth.auth().addStateDidChangeListener { [weak self] (auth, user) in
+            guard let user = user
+            else {
+                let loginViewController = self?.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                self?.present(loginViewController, animated: true, completion: nil)
+                return
+            }
+
+            print(user.email)
+            self?.user = user
+        }
     }
 
     override func didReceiveMemoryWarning() {
