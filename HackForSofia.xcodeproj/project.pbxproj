@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD43EBDB1FE531C500D3FE4F /* NotSupportedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBDA1FE531C500D3FE4F /* NotSupportedViewController.swift */; };
+		BD43EBE61FE5320B00D3FE4F /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBDC1FE5320900D3FE4F /* LocationNode.swift */; };
+		BD43EBE71FE5320B00D3FE4F /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBDD1FE5320900D3FE4F /* SCNVector3+Extensions.swift */; };
+		BD43EBE81FE5320B00D3FE4F /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBDE1FE5320900D3FE4F /* FloatingPoint+Radians.swift */; };
+		BD43EBE91FE5320B00D3FE4F /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBDF1FE5320A00D3FE4F /* SceneLocationEstimate.swift */; };
+		BD43EBEA1FE5320B00D3FE4F /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBE01FE5320A00D3FE4F /* CLLocation+Extensions.swift */; };
+		BD43EBEB1FE5320B00D3FE4F /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBE11FE5320A00D3FE4F /* SceneLocationEstimate+Extensions.swift */; };
+		BD43EBEC1FE5320B00D3FE4F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBE21FE5320A00D3FE4F /* LocationManager.swift */; };
+		BD43EBED1FE5320B00D3FE4F /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBE31FE5320A00D3FE4F /* CGPoint+Extensions.swift */; };
+		BD43EBEE1FE5320B00D3FE4F /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBE41FE5320A00D3FE4F /* SCNNode+Extensions.swift */; };
+		BD43EBEF1FE5320B00D3FE4F /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBE51FE5320B00D3FE4F /* SceneLocationView.swift */; };
+		BD5BBF021FE4987F0000FF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5BBF011FE4987F0000FF42 /* AppDelegate.swift */; };
+		BD5BBF041FE4987F0000FF42 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5BBF031FE4987F0000FF42 /* art.scnassets */; };
+		BD5BBF061FE4987F0000FF42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5BBF051FE4987F0000FF42 /* ViewController.swift */; };
+		BD5BBF091FE4987F0000FF42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5BBF071FE4987F0000FF42 /* Main.storyboard */; };
+		BD5BBF0B1FE4987F0000FF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5BBF0A1FE4987F0000FF42 /* Assets.xcassets */; };
+		BD5BBF0E1FE4987F0000FF42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5BBF0C1FE4987F0000FF42 /* LaunchScreen.storyboard */; };
+		BDA4B29C1FE5462700C0B4BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B29B1FE5462700C0B4BC /* MapViewController.swift */; };
+		BDA4B29E1FE5463B00C0B4BC /* ObjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B29D1FE5463B00C0B4BC /* ObjectDetailsViewController.swift */; };
+		BDA4B2A01FE57C4C00C0B4BC /* DetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA4B29F1FE57C4C00C0B4BC /* DetailsStoryboard.storyboard */; };
+		D7D612FEF4188E115273D9D4 /* Pods_HackForSofia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA84E09BE1976CAC34DBEB8 /* Pods_HackForSofia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4BCA0F709A8F0B533E4C4BD1 /* Pods-HackForSofia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackForSofia.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackForSofia/Pods-HackForSofia.release.xcconfig"; sourceTree = "<group>"; };
+		86F32FA91D838B565E811CCE /* Pods-HackForSofia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackForSofia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackForSofia/Pods-HackForSofia.debug.xcconfig"; sourceTree = "<group>"; };
+		BD43EBDA1FE531C500D3FE4F /* NotSupportedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSupportedViewController.swift; sourceTree = "<group>"; };
+		BD43EBDC1FE5320900D3FE4F /* LocationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
+		BD43EBDD1FE5320900D3FE4F /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		BD43EBDE1FE5320900D3FE4F /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
+		BD43EBDF1FE5320A00D3FE4F /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationEstimate.swift; sourceTree = "<group>"; };
+		BD43EBE01FE5320A00D3FE4F /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		BD43EBE11FE5320A00D3FE4F /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		BD43EBE21FE5320A00D3FE4F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BD43EBE31FE5320A00D3FE4F /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		BD43EBE41FE5320A00D3FE4F /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		BD43EBE51FE5320B00D3FE4F /* SceneLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationView.swift; sourceTree = "<group>"; };
+		BD5BBEFE1FE4987F0000FF42 /* HackForSofia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackForSofia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5BBF011FE4987F0000FF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD5BBF031FE4987F0000FF42 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		BD5BBF051FE4987F0000FF42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD5BBF081FE4987F0000FF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD5BBF0A1FE4987F0000FF42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD5BBF0D1FE4987F0000FF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD5BBF0F1FE4987F0000FF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA4B29B1FE5462700C0B4BC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BDA4B29D1FE5463B00C0B4BC /* ObjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetailsViewController.swift; sourceTree = "<group>"; };
+		BDA4B29F1FE57C4C00C0B4BC /* DetailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsStoryboard.storyboard; sourceTree = "<group>"; };
+		FDA84E09BE1976CAC34DBEB8 /* Pods_HackForSofia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackForSofia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD5BBEFB1FE4987E0000FF42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D612FEF4188E115273D9D4 /* Pods_HackForSofia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B93432B0B21692D7EA32A25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDA84E09BE1976CAC34DBEB8 /* Pods_HackForSofia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD5BBEF51FE4987E0000FF42 = {
+			isa = PBXGroup;
+			children = (
+				BD5BBF001FE4987F0000FF42 /* HackForSofia */,
+				BD5BBEFF1FE4987F0000FF42 /* Products */,
+				DCF77121FEE07C7F4AC11240 /* Pods */,
+				3B93432B0B21692D7EA32A25 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD5BBEFF1FE4987F0000FF42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD5BBEFE1FE4987F0000FF42 /* HackForSofia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD5BBF001FE4987F0000FF42 /* HackForSofia */ = {
+			isa = PBXGroup;
+			children = (
+				BDA4B2961FE5458100C0B4BC /* Extension */,
+				BDA4B2971FE5459900C0B4BC /* Model */,
+				BDA4B2981FE545A300C0B4BC /* CustomViews */,
+				BDA4B2991FE545AF00C0B4BC /* Controllers */,
+				BDA4B29A1FE545B900C0B4BC /* View */,
+				BD5BBF0A1FE4987F0000FF42 /* Assets.xcassets */,
+				BD5BBF031FE4987F0000FF42 /* art.scnassets */,
+				BD5BBF0F1FE4987F0000FF42 /* Info.plist */,
+			);
+			path = HackForSofia;
+			sourceTree = "<group>";
+		};
+		BDA4B2961FE5458100C0B4BC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BD43EBE31FE5320A00D3FE4F /* CGPoint+Extensions.swift */,
+				BD43EBE01FE5320A00D3FE4F /* CLLocation+Extensions.swift */,
+				BD43EBDE1FE5320900D3FE4F /* FloatingPoint+Radians.swift */,
+				BD43EBE11FE5320A00D3FE4F /* SceneLocationEstimate+Extensions.swift */,
+				BD43EBE41FE5320A00D3FE4F /* SCNNode+Extensions.swift */,
+				BD43EBDD1FE5320900D3FE4F /* SCNVector3+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BDA4B2971FE5459900C0B4BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD43EBE21FE5320A00D3FE4F /* LocationManager.swift */,
+				BD43EBDC1FE5320900D3FE4F /* LocationNode.swift */,
+				BD43EBDF1FE5320A00D3FE4F /* SceneLocationEstimate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDA4B2981FE545A300C0B4BC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				BD43EBE51FE5320B00D3FE4F /* SceneLocationView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		BDA4B2991FE545AF00C0B4BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD5BBF011FE4987F0000FF42 /* AppDelegate.swift */,
+				BD43EBDA1FE531C500D3FE4F /* NotSupportedViewController.swift */,
+				BD5BBF051FE4987F0000FF42 /* ViewController.swift */,
+				BDA4B29B1FE5462700C0B4BC /* MapViewController.swift */,
+				BDA4B29D1FE5463B00C0B4BC /* ObjectDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BDA4B29A1FE545B900C0B4BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD5BBF0C1FE4987F0000FF42 /* LaunchScreen.storyboard */,
+				BD5BBF071FE4987F0000FF42 /* Main.storyboard */,
+				BDA4B29F1FE57C4C00C0B4BC /* DetailsStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCF77121FEE07C7F4AC11240 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86F32FA91D838B565E811CCE /* Pods-HackForSofia.debug.xcconfig */,
+				4BCA0F709A8F0B533E4C4BD1 /* Pods-HackForSofia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD5BBEFD1FE4987E0000FF42 /* HackForSofia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD5BBF121FE4987F0000FF42 /* Build configuration list for PBXNativeTarget "HackForSofia" */;
+			buildPhases = (
+				C253042F97CE8E92C3FB02B8 /* [CP] Check Pods Manifest.lock */,
+				BD5BBEFA1FE4987E0000FF42 /* Sources */,
+				BD5BBEFB1FE4987E0000FF42 /* Frameworks */,
+				BD5BBEFC1FE4987E0000FF42 /* Resources */,
+				0828DB2A0FF35B4223098057 /* [CP] Embed Pods Frameworks */,
+				4166DF2F8FB29AEC8FBA6A2B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackForSofia;
+			productName = HackForSofia;
+			productReference = BD5BBEFE1FE4987F0000FF42 /* HackForSofia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD5BBEF61FE4987E0000FF42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Emil Iliev";
+				TargetAttributes = {
+					BD5BBEFD1FE4987E0000FF42 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BD5BBEF91FE4987E0000FF42 /* Build configuration list for PBXProject "HackForSofia" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD5BBEF51FE4987E0000FF42;
+			productRefGroup = BD5BBEFF1FE4987F0000FF42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD5BBEFD1FE4987E0000FF42 /* HackForSofia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD5BBEFC1FE4987E0000FF42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5BBF041FE4987F0000FF42 /* art.scnassets in Resources */,
+				BDA4B2A01FE57C4C00C0B4BC /* DetailsStoryboard.storyboard in Resources */,
+				BD5BBF0E1FE4987F0000FF42 /* LaunchScreen.storyboard in Resources */,
+				BD5BBF0B1FE4987F0000FF42 /* Assets.xcassets in Resources */,
+				BD5BBF091FE4987F0000FF42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0828DB2A0FF35B4223098057 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HackForSofia/Pods-HackForSofia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ARCL/ARCL.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARCL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackForSofia/Pods-HackForSofia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4166DF2F8FB29AEC8FBA6A2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackForSofia/Pods-HackForSofia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C253042F97CE8E92C3FB02B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackForSofia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD5BBEFA1FE4987E0000FF42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD43EBEE1FE5320B00D3FE4F /* SCNNode+Extensions.swift in Sources */,
+				BD43EBE61FE5320B00D3FE4F /* LocationNode.swift in Sources */,
+				BD43EBEA1FE5320B00D3FE4F /* CLLocation+Extensions.swift in Sources */,
+				BDA4B29E1FE5463B00C0B4BC /* ObjectDetailsViewController.swift in Sources */,
+				BD43EBEC1FE5320B00D3FE4F /* LocationManager.swift in Sources */,
+				BD5BBF061FE4987F0000FF42 /* ViewController.swift in Sources */,
+				BD5BBF021FE4987F0000FF42 /* AppDelegate.swift in Sources */,
+				BD43EBEB1FE5320B00D3FE4F /* SceneLocationEstimate+Extensions.swift in Sources */,
+				BD43EBEF1FE5320B00D3FE4F /* SceneLocationView.swift in Sources */,
+				BD43EBDB1FE531C500D3FE4F /* NotSupportedViewController.swift in Sources */,
+				BD43EBED1FE5320B00D3FE4F /* CGPoint+Extensions.swift in Sources */,
+				BD43EBE91FE5320B00D3FE4F /* SceneLocationEstimate.swift in Sources */,
+				BD43EBE71FE5320B00D3FE4F /* SCNVector3+Extensions.swift in Sources */,
+				BD43EBE81FE5320B00D3FE4F /* FloatingPoint+Radians.swift in Sources */,
+				BDA4B29C1FE5462700C0B4BC /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD5BBF071FE4987F0000FF42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD5BBF081FE4987F0000FF42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD5BBF0C1FE4987F0000FF42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD5BBF0D1FE4987F0000FF42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD5BBF101FE4987F0000FF42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD5BBF111FE4987F0000FF42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD5BBF131FE4987F0000FF42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F32FA91D838B565E811CCE /* Pods-HackForSofia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PXEG9GD6UJ;
+				INFOPLIST_FILE = HackForSofia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emil-Iliev.HackForSofia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD5BBF141FE4987F0000FF42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BCA0F709A8F0B533E4C4BD1 /* Pods-HackForSofia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PXEG9GD6UJ;
+				INFOPLIST_FILE = HackForSofia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emil-Iliev.HackForSofia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD5BBEF91FE4987E0000FF42 /* Build configuration list for PBXProject "HackForSofia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD5BBF101FE4987F0000FF42 /* Debug */,
+				BD5BBF111FE4987F0000FF42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD5BBF121FE4987F0000FF42 /* Build configuration list for PBXNativeTarget "HackForSofia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD5BBF131FE4987F0000FF42 /* Debug */,
+				BD5BBF141FE4987F0000FF42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD5BBEF61FE4987E0000FF42 /* Project object */;
+}

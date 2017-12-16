@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="igQ-dL-EO8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3Zr-gY-cmM">
+            <objects>
+                <tabBarController id="igQ-dL-EO8" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ml5-Qr-RNd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KvJ-Kn-3yt" kind="relationship" relationship="viewControllers" id="Qbd-wJ-r5j"/>
+                        <segue destination="Ysw-Kg-jXE" kind="relationship" relationship="viewControllers" id="AQ8-br-XeB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t98-MW-dPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2078" y="-1656"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4Tu-hM-QPp">
+            <objects>
+                <viewController id="Ysw-Kg-jXE" customClass="ViewController" customModule="HackForSofia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xLC-Qx-mUD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="dhi-TO-8jN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="8s6-xf-UWA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5mV-4Z-6BP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1135" y="-1335"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="jXn-Sh-0MJ">
+            <objects>
+                <viewControllerPlaceholder id="x3u-DV-O1e" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zYS-5v-v6L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335" y="-1554"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pAg-D4-Qhm">
+            <objects>
+                <viewController id="KvJ-Kn-3yt" customClass="MapViewController" customModule="HackForSofia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3lo-BE-LxK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1B6-mc-b1g">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0a3-d1-hja" firstAttribute="trailing" secondItem="1B6-mc-b1g" secondAttribute="trailing" id="AdX-OT-0Fx"/>
+                            <constraint firstItem="1B6-mc-b1g" firstAttribute="leading" secondItem="0a3-d1-hja" secondAttribute="leading" id="Dk5-7Q-yo1"/>
+                            <constraint firstItem="0a3-d1-hja" firstAttribute="bottom" secondItem="1B6-mc-b1g" secondAttribute="bottom" id="MDW-ur-2tx"/>
+                            <constraint firstItem="1B6-mc-b1g" firstAttribute="top" secondItem="0a3-d1-hja" secondAttribute="top" id="PQn-Mm-RDI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0a3-d1-hja"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="u6X-Hx-kWE"/>
+                    <connections>
+                        <outlet property="mapView" destination="1B6-mc-b1g" id="5vL-GD-CyL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Zf-RY-svi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1119.2" y="-2040.6296851574214"/>
+        </scene>
+    </scenes>
+</document>
