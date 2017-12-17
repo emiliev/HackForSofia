@@ -15,4 +15,7 @@ let LOCATION_OFFSET = 0.00050
 //let appUser = User.sharedUser
 let storage = Firestore.firestore()
 
+enum DatabaseTables{
+    case locations
+}
 

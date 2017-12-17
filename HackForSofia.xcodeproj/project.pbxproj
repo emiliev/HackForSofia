@@ -36,6 +36,7 @@
 		BDA4B2AA1FE5A21100C0B4BC /* API+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2A91FE5A21100C0B4BC /* API+Auth.swift */; };
 		BDA4B2AC1FE5A22500C0B4BC /* API+Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2AB1FE5A22500C0B4BC /* API+Feed.swift */; };
 		BDA4B2AF1FE5C4E500C0B4BC /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2AE1FE5C4E500C0B4BC /* Object.swift */; };
+		BDA4B2B11FE5FB1100C0B4BC /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2B01FE5FB1100C0B4BC /* Artwork.swift */; };
 		D7D612FEF4188E115273D9D4 /* Pods_HackForSofia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA84E09BE1976CAC34DBEB8 /* Pods_HackForSofia.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		BDA4B2A91FE5A21100C0B4BC /* API+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Auth.swift"; sourceTree = "<group>"; };
 		BDA4B2AB1FE5A22500C0B4BC /* API+Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Feed.swift"; sourceTree = "<group>"; };
 		BDA4B2AE1FE5C4E500C0B4BC /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		BDA4B2B01FE5FB1100C0B4BC /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		FDA84E09BE1976CAC34DBEB8 /* Pods_HackForSofia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackForSofia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 				BDA4B2A11FE58FB500C0B4BC /* Common.swift */,
 				BDA4B2A51FE59BE600C0B4BC /* User.swift */,
 				BDA4B2AE1FE5C4E500C0B4BC /* Object.swift */,
+				BDA4B2B01FE5FB1100C0B4BC /* Artwork.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				BD5BBF061FE4987F0000FF42 /* ViewController.swift in Sources */,
 				BDA4B2A61FE59BE600C0B4BC /* User.swift in Sources */,
 				BD5BBF021FE4987F0000FF42 /* AppDelegate.swift in Sources */,
+				BDA4B2B11FE5FB1100C0B4BC /* Artwork.swift in Sources */,
 				BDA4B2AF1FE5C4E500C0B4BC /* Object.swift in Sources */,
 				BD43EBEB1FE5320B00D3FE4F /* SceneLocationEstimate+Extensions.swift in Sources */,
 				BD43EBEF1FE5320B00D3FE4F /* SceneLocationView.swift in Sources */,

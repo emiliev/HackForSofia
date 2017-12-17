@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 enum ObjectType{
     case building
@@ -14,11 +15,30 @@ enum ObjectType{
 }
 
 class Object{
-    var position: Position = (0,0)
+    var position: GeoPoint = GeoPoint(latitude: 0, longitude: 0)
     var altitude: Double = 0
     var assetName: String = "No name"
     var desc: String = "No description"
     var name: String = "No name"
     var type: ObjectType = .building
     var link: String = "youtube.com"
+    
+    init?(dict: Dictionary<String, Any>){
+        guard let d_name = dict["name"] as? String,
+            let d_assetName = dict["assetName"] as? String,
+            let d_description = dict["description"] as? String,
+            let d_type = dict["type"] as? String,
+            let d_youtube = dict["youtube"] as? String,
+            let d_altitude = dict["altitude"] as? Double,
+            let d_position = dict["position"] as? GeoPoint
+        else { return }
+    
+        self.name = d_name
+        self.assetName = d_assetName
+        self.desc = d_description
+        self.link = d_youtube
+        self.altitude = d_altitude
+        self.position = d_position
+    
+    }
 }
