@@ -11,7 +11,27 @@ import Firebase
 
 enum ObjectType{
     case building
+    case church
+    case museum
+    case theatre
+    case gallery
+    case monument
+    case fortress
     
+    
+    static func typeFor(text: String) -> ObjectType{
+        switch text{
+            case "church":      return .church
+            case "museum":      return .museum
+            case "theatre" :    return .theatre
+            case "gallery":     return .gallery
+            case "monument" :   return .monument
+            case "fortress" :   return .fortress
+            case "building":    return .building
+            default:
+                return .fortress
+        }
+    }
 }
 
 class Object{
@@ -39,6 +59,6 @@ class Object{
         self.link = d_youtube
         self.altitude = d_altitude
         self.position = d_position
-    
+        self.type = ObjectType.typeFor(text: d_type)
     }
 }

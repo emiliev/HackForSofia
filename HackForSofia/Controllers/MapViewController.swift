@@ -28,8 +28,7 @@ class MapViewController: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.requestLocation()
     
-        mapView.register(ArtworkMarkerView.self,
-                         forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        mapView.register(ArtworkView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,22 +70,20 @@ extension MapViewController: CLLocationManagerDelegate{
                 sSelf.locations = []
                 
                
-                unwarpQuery.documents.forEach({ (document) in
-                    let dict = document.data()
+                for doc in unwarpQuery.documents{
+                    let dict = doc.data()
                     
-                    if let object = Object(dict: dict){
-                        sSelf.locations.append(object)
-                        
-                    }
+                    guard let object = Object(dict: dict),
+                        let artwork = Artwork(dict: dict)
+                    else { continue }
                     
-                    if let artworkObject = Artwork(dict: dict){
-                        sSelf.annotations.append(artworkObject)
-                    }
-                })
+                    ObjectContainer.sharedObject.objects.append(object)
+                    sSelf.locations.append(object)
+                    artwork.object = object
+                    sSelf.annotations.append(artwork)
+                }
                 
                 sSelf.loadAnnotations()
-        
-        
         }
     }
     
@@ -107,25 +104,13 @@ extension MapViewController: CLLocationManagerDelegate{
 //MARK:- MKMapViewDelegate
 extension MapViewController: MKMapViewDelegate{
     
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        guard let annotation = annotation as? Artwork else { return nil }
-//        // 3
-//        let identifier = "marker"
-//        var view: MKMarkerAnnotationView
-//        // 4
-//        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-//            as? MKMarkerAnnotationView {
-//            dequeuedView.annotation = annotation
-//            view = dequeuedView
-//        } else {
-//            // 5
-//            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-//            view.canShowCallout = true
-//            view.calloutOffset = CGPoint(x: -5, y: 5)
-//            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-//        }
-//        return view
-//    }
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
+                 calloutAccessoryControlTapped control: UIControl) {
+        let location = view.annotation as! Artwork
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey:
+            MKLaunchOptionsDirectionsModeDriving]
+        location.mapItem().openInMaps(launchOptions: launchOptions)
+    }
 }
 
 

@@ -37,6 +37,8 @@
 		BDA4B2AC1FE5A22500C0B4BC /* API+Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2AB1FE5A22500C0B4BC /* API+Feed.swift */; };
 		BDA4B2AF1FE5C4E500C0B4BC /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2AE1FE5C4E500C0B4BC /* Object.swift */; };
 		BDA4B2B11FE5FB1100C0B4BC /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2B01FE5FB1100C0B4BC /* Artwork.swift */; };
+		BDA4B2B31FE67A3F00C0B4BC /* ObjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4B2B21FE67A3F00C0B4BC /* ObjectContainer.swift */; };
+		BDED16C81FE6AD7B00E9F1B1 /* TabBarVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDED16C71FE6AD7B00E9F1B1 /* TabBarVCViewController.swift */; };
 		D7D612FEF4188E115273D9D4 /* Pods_HackForSofia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA84E09BE1976CAC34DBEB8 /* Pods_HackForSofia.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		BDA4B2AB1FE5A22500C0B4BC /* API+Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Feed.swift"; sourceTree = "<group>"; };
 		BDA4B2AE1FE5C4E500C0B4BC /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		BDA4B2B01FE5FB1100C0B4BC /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		BDA4B2B21FE67A3F00C0B4BC /* ObjectContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectContainer.swift; sourceTree = "<group>"; };
+		BDED16C71FE6AD7B00E9F1B1 /* TabBarVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVCViewController.swift; sourceTree = "<group>"; };
 		FDA84E09BE1976CAC34DBEB8 /* Pods_HackForSofia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackForSofia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -157,6 +161,7 @@
 				BDA4B2A51FE59BE600C0B4BC /* User.swift */,
 				BDA4B2AE1FE5C4E500C0B4BC /* Object.swift */,
 				BDA4B2B01FE5FB1100C0B4BC /* Artwork.swift */,
+				BDA4B2B21FE67A3F00C0B4BC /* ObjectContainer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				BDA4B29D1FE5463B00C0B4BC /* ObjectDetailsViewController.swift */,
 				9C9C7A0B1FE58EE000BF4227 /* RegisterViewController.swift */,
 				9C9C7A0D1FE5903000BF4227 /* LoginViewController.swift */,
+				BDED16C71FE6AD7B00E9F1B1 /* TabBarVCViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				BD43EBEF1FE5320B00D3FE4F /* SceneLocationView.swift in Sources */,
 				BD43EBDB1FE531C500D3FE4F /* NotSupportedViewController.swift in Sources */,
 				BD43EBED1FE5320B00D3FE4F /* CGPoint+Extensions.swift in Sources */,
+				BDA4B2B31FE67A3F00C0B4BC /* ObjectContainer.swift in Sources */,
 				9C9C7A0C1FE58EE000BF4227 /* RegisterViewController.swift in Sources */,
 				BD43EBE91FE5320B00D3FE4F /* SceneLocationEstimate.swift in Sources */,
 				9C9C7A0E1FE5903000BF4227 /* LoginViewController.swift in Sources */,
@@ -389,6 +396,7 @@
 				BDA4B2A81FE5A20200C0B4BC /* API.swift in Sources */,
 				BDA4B2AC1FE5A22500C0B4BC /* API+Feed.swift in Sources */,
 				BDA4B29C1FE5462700C0B4BC /* MapViewController.swift in Sources */,
+				BDED16C81FE6AD7B00E9F1B1 /* TabBarVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L5373Z8VLK;
+				DEVELOPMENT_TEAM = PXEG9GD6UJ;
 				INFOPLIST_FILE = HackForSofia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -544,7 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L5373Z8VLK;
+				DEVELOPMENT_TEAM = PXEG9GD6UJ;
 				INFOPLIST_FILE = HackForSofia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

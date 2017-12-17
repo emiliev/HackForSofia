@@ -140,7 +140,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jh6-dq-9zs">
-                                <rect key="frame" x="16" y="114" width="343" height="450"/>
+                                <rect key="frame" x="16" y="70" width="343" height="450"/>
                                 <subviews>
                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7p5-2z-stp">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="450"/>
@@ -301,9 +301,6 @@
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="up6-AC-AWN" kind="show" identifier="details" id="Qy2-D6-oqw"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

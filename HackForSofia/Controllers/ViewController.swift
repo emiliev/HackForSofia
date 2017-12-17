@@ -64,17 +64,28 @@ class ViewController: UIViewController, MKMapViewDelegate, SceneLocationViewDele
         sceneLocationView.showAxesNode = true
         sceneLocationView.locationDelegate = self
         
-        if displayDebugging {
-            sceneLocationView.showFeaturePoints = true
-        }
+//        if displayDebugging {
+//            sceneLocationView.showFeaturePoints = true
+//        }
         
+//        //nevski
+//        let nevskiCoord = CLLocationCoordinate2D(latitude: 42.6742154, longitude: 23.3293506)
+//        let nevskiLoc = CLLocation(coordinate: nevskiCoord, altitude: 602)
+//
+//
+//        let nevskiImage = UIImage(named: "nevski")!
+//        let nevskiNode = LocationAnnotationNode(location: nevskiLoc, image: nevskiImage)
+//       sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: nevskiNode)
+//
+        //fmi codes
         //Currently set to Canary Wharf
-        let pinCoordinate = CLLocationCoordinate2D(latitude:42.675019, longitude: 23.330134
-        )
+        let pinCoordinate = CLLocationCoordinate2D(latitude:42.675019, longitude: 23.330134)
         let pinLocation = CLLocation(coordinate: pinCoordinate, altitude: 606)
-        let pinImage = UIImage(named: "pin")!
+        
+        let pinImage = UIImage(named: "fmi_codes")!
         let pinLocationNode = LocationAnnotationNode(location: pinLocation, image: pinImage)
         sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: pinLocationNode)
+        
         
         view.addSubview(sceneLocationView)
         
@@ -153,8 +164,12 @@ class ViewController: UIViewController, MKMapViewDelegate, SceneLocationViewDele
         //            hitResult.node as? LocationAnnotationNode
         else { return }
         
-        let node = hitResult.node
-        print(node.worldPosition)
+//        for obj in ObjectContainer.sharedObject.objects{
+//
+//        }
+        
+        let detailsVC = storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! ObjectDetailsViewController
+        navigationController?.pushViewController(detailsVC, animated: true)
         
     }
     
@@ -241,41 +256,41 @@ class ViewController: UIViewController, MKMapViewDelegate, SceneLocationViewDele
         super.touchesBegan(touches, with: event)
 
         guard counter < 1 else { return }
-        
+
         if let touch = touches.first {
             if touch.view != nil {
-                if (mapView == touch.view! ||
-                    mapView.recursiveSubviews().contains(touch.view!)) {
-                    centerMapOnUserLocation = false
-                } else {
-                    
-                    let location = touch.location(in: self.view)
-                    
-                    if location.x <= 40 && adjustNorthByTappingSidesOfScreen {
-                        print("left side of the screen")
-                        sceneLocationView.moveSceneHeadingAntiClockwise()
-                    } else if location.x >= view.frame.size.width - 40 && adjustNorthByTappingSidesOfScreen {
-                        print("right side of the screen")
-                        sceneLocationView.moveSceneHeadingClockwise()
-                    } else {
-                        
-                        guard let scene = SCNScene(named: "art.scnassets/ship.scn")
+//                if (mapView == touch.view! ||
+//                    mapView.recursiveSubviews().contains(touch.view!)) {
+//                    centerMapOnUserLocation = false
+//                } else {
+//
+//                    let location = touch.location(in: self.view)
+//
+//                    if location.x <= 40 && adjustNorthByTappingSidesOfScreen {
+//                        print("left side of the screen")
+//                        sceneLocationView.moveSceneHeadingAntiClockwise()
+//                    } else if location.x >= view.frame.size.width - 40 && adjustNorthByTappingSidesOfScreen {
+//                        print("right side of the screen")
+//                        sceneLocationView.moveSceneHeadingClockwise()
+//                    } else {
+
+                        guard let scene = SCNScene(named: "art.scnassets/diceCollada.scn")
                         else { return }
-                        
-                        let node = scene.rootNode.childNode(withName: "ship", recursively: true)
+
+                        let node = scene.rootNode.childNode(withName: "Dice", recursively: true)
                         let locNode = LocationAnnotationNode(location: nil, node: node!)
 
                         locNode.scaleRelativeToDistance = true
                         sceneLocationView.addLocationNodeForCurrentPosition(
                             locationNode: locNode)
-                    }
-                }
+//                    }
+//                }
             }
         }
-        
+
         counter += 1
     }
-    
+
     //MARK: MKMapViewDelegate
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

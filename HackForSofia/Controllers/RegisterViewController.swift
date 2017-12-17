@@ -33,30 +33,38 @@ class RegisterViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        guard let email = emailTextField.text,
-            let password = passwordTextField.text,
-            let firstName = firstNameTextField.text,
-            let lastName = lastNameTextField.text
-        else { return false }
+//        guard let email = emailTextField.text,
+//            let password = passwordTextField.text,
+//            let firstName = firstNameTextField.text,
+//            let lastName = lastNameTextField.text
+//        else { return false }
+//
+//        let should = validateTextFields()
+//        if should {
+//            Auth.auth().createUser(withEmail: email, password: password) { [weak self] (user, error) in
+//                guard let sSelf = self,
+//                    error == nil else {
+//                        let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+//                        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+//                        alertController.addAction(okAction)
+//                        self?.present(alertController, animated: true, completion: nil)
+//                        return
+//                }
+//
+//                print("User registered in!")
+////                 sSelf.ref.child("data/users").updateChildValues(["\(Auth.auth().currentUser!.uid)": ["Username": firstName + " " + lastName]])
+//
+//            }
+//        }
         
-        let should = validateTextFields()
-        if should {
-            Auth.auth().createUser(withEmail: email, password: password) { [weak self] (user, error) in
-                guard let sSelf = self,
-                    error == nil else {
-                        let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                        alertController.addAction(okAction)
-                        self?.present(alertController, animated: true, completion: nil)
-                        return
-                }
-                
-                print("User registered in!")
-                // sSelf.ref.child("data/users").updateChildValues(["\(Auth.auth().currentUser!.uid)": ["Username": firstName + " " + lastName]])
-            }
-        }
+        dismiss(animated: true, completion: nil)
+        return true
         
-        return should
+//        return should
+    }
+    
+    @IBAction func register(_ sender: Any) {
+        print("asd")
     }
     
     func validateTextFields() -> Bool {

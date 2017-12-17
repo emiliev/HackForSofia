@@ -27,9 +27,11 @@ class LoginViewController: UIViewController {
                 return
             }
             
-            let detailsViewController = self?.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! ObjectDetailsViewController
-            self?.present(detailsViewController, animated: true, completion: nil)
-            print(user.email)
+//            let detailsViewController = self?.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! ObjectDetailsViewController
+//            self?.present(detailsViewController, animated: true, completion: nil)
+//            print(user.email)
+            
+            
             // self?.user = user
         }
     }
@@ -38,6 +40,7 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     @IBAction func signIn(_ sender: Any) {
         guard let email = emailTextField.text,
@@ -61,6 +64,9 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func hide(_ sender: Any) {
+        self.view.endEditing(true)
+    }
     /*
     // MARK: - Navigation
 
