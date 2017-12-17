@@ -153,7 +153,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="CXb-lZ-A2h">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="user2" translatesAutoresizingMaskIntoConstraints="NO" id="SA2-no-uU8">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="SA2-no-uU8">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -177,7 +177,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWB-mv-HBj">
                                         <rect key="frame" x="0.0" y="50" width="343" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="user2" translatesAutoresizingMaskIntoConstraints="NO" id="3op-An-AW9">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="3op-An-AW9">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -311,7 +311,7 @@
     <resources>
         <image name="mail" width="50" height="50"/>
         <image name="password" width="50" height="50"/>
-        <image name="user2" width="50" height="50"/>
+        <image name="user" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Qy2-D6-oqw"/>

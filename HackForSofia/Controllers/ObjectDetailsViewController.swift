@@ -18,6 +18,7 @@ class ObjectDetailsViewController: UIViewController {
         
         title = "Details"
         
+        // TODO: Change eventually
         try! Auth.auth().signOut()
 
         Auth.auth().addStateDidChangeListener { [weak self] (auth, user) in
