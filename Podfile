@@ -6,11 +6,10 @@ target 'HackForSofia' do
   use_frameworks!
 
 	pod 'ARCL'
-    pod 'CocoaLumberjack/Swift', :git => 'https://github.com/CocoaLumberjack/CocoaLumberjack', :branch => 'master'
-  # Pods for HackForSofia
 	pod 'Firebase/Core'
+	pod 'Firebase/Storage'
 	pod 'Firebase/Database'
 	pod 'Firebase/Auth'
-	pod 'Firebase/Storage'
-
+	pod 'Firebase/Firestore'
+    pod 'CocoaLumberjack/Swift', :git => 'https://github.com/CocoaLumberjack/CocoaLumberjack', :branch => 'master'
 end
