@@ -57,20 +57,7 @@ extension MapViewController: CLLocationManagerDelegate{
     
     private func getObjects(position: Position){
         
-        let area = nearDistance(position: position)
-        print(area.0)
-        print("\n")
-        print(area.1)
-        
-        let lesserGeoPoint = GeoPoint(latitude: area.1, longitude: area.3)
-        let higherGeoPoint = GeoPoint(latitude: area.0, longitude: area.2)
-        
-        
-        
         storage.collection("locations")
-            .whereField("position", isLessThanOrEqualTo: lesserGeoPoint)
-            .with
-//            .whereField("altitude", isGreaterThan: 500)
             .getDocuments { [weak self] (querySnapshot, error) in
                 guard let sSelf = self,
                     let unwarpQuery = querySnapshot,
@@ -96,15 +83,5 @@ extension MapViewController: CLLocationManagerDelegate{
         else{
             locationManager.requestWhenInUseAuthorization()
         }
-    }
-
-    private func nearDistance(position: Position) -> LocalArea{
-        let minX = position.0 - LOCATION_OFFSET
-        let maxX = position.0 + LOCATION_OFFSET
-        
-        let minY = position.1 - LOCATION_OFFSET
-        let maxY = position.1 + LOCATION_OFFSET
-        
-        return (minX,maxX,minY,maxY)
     }
 }

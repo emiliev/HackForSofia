@@ -12,7 +12,4 @@ target 'HackForSofia' do
 	pod 'Firebase/Auth'
 	pod 'Firebase/Firestore'
     pod 'CocoaLumberjack/Swift', :git => 'https://github.com/CocoaLumberjack/CocoaLumberjack', :branch => 'master'
-	pod 'Firebase/Core'
-  # Pods for HackForSofia
-
 end

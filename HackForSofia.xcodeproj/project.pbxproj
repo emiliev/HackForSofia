@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C9C7A0C1FE58EE000BF4227 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C7A0B1FE58EE000BF4227 /* RegisterViewController.swift */; };
+		9C9C7A0E1FE5903000BF4227 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9C7A0D1FE5903000BF4227 /* LoginViewController.swift */; };
 		BD43EBDB1FE531C500D3FE4F /* NotSupportedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBDA1FE531C500D3FE4F /* NotSupportedViewController.swift */; };
 		BD43EBE61FE5320B00D3FE4F /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBDC1FE5320900D3FE4F /* LocationNode.swift */; };
 		BD43EBE71FE5320B00D3FE4F /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43EBDD1FE5320900D3FE4F /* SCNVector3+Extensions.swift */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		4BCA0F709A8F0B533E4C4BD1 /* Pods-HackForSofia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackForSofia.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackForSofia/Pods-HackForSofia.release.xcconfig"; sourceTree = "<group>"; };
 		86F32FA91D838B565E811CCE /* Pods-HackForSofia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackForSofia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackForSofia/Pods-HackForSofia.debug.xcconfig"; sourceTree = "<group>"; };
+		9C9C7A0B1FE58EE000BF4227 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9C9C7A0D1FE5903000BF4227 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD43EBDA1FE531C500D3FE4F /* NotSupportedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSupportedViewController.swift; sourceTree = "<group>"; };
 		BD43EBDC1FE5320900D3FE4F /* LocationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
 		BD43EBDD1FE5320900D3FE4F /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				BDA4B2981FE545A300C0B4BC /* CustomViews */,
 				BDA4B2991FE545AF00C0B4BC /* Controllers */,
 				BDA4B29A1FE545B900C0B4BC /* View */,
+				BD5BBF011FE4987F0000FF42 /* AppDelegate.swift */,
 				BD5BBF0A1FE4987F0000FF42 /* Assets.xcassets */,
 				BD5BBF031FE4987F0000FF42 /* art.scnassets */,
 				BD5BBF0F1FE4987F0000FF42 /* Info.plist */,
@@ -164,11 +169,12 @@
 		BDA4B2991FE545AF00C0B4BC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BD5BBF011FE4987F0000FF42 /* AppDelegate.swift */,
 				BD43EBDA1FE531C500D3FE4F /* NotSupportedViewController.swift */,
 				BD5BBF051FE4987F0000FF42 /* ViewController.swift */,
 				BDA4B29B1FE5462700C0B4BC /* MapViewController.swift */,
 				BDA4B29D1FE5463B00C0B4BC /* ObjectDetailsViewController.swift */,
+				9C9C7A0B1FE58EE000BF4227 /* RegisterViewController.swift */,
+				9C9C7A0D1FE5903000BF4227 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -371,7 +377,9 @@
 				BD43EBEF1FE5320B00D3FE4F /* SceneLocationView.swift in Sources */,
 				BD43EBDB1FE531C500D3FE4F /* NotSupportedViewController.swift in Sources */,
 				BD43EBED1FE5320B00D3FE4F /* CGPoint+Extensions.swift in Sources */,
+				9C9C7A0C1FE58EE000BF4227 /* RegisterViewController.swift in Sources */,
 				BD43EBE91FE5320B00D3FE4F /* SceneLocationEstimate.swift in Sources */,
+				9C9C7A0E1FE5903000BF4227 /* LoginViewController.swift in Sources */,
 				BD43EBE71FE5320B00D3FE4F /* SCNVector3+Extensions.swift in Sources */,
 				BD43EBE81FE5320B00D3FE4F /* FloatingPoint+Radians.swift in Sources */,
 				BDA4B2A81FE5A20200C0B4BC /* API.swift in Sources */,

@@ -8,12 +8,12 @@
 
 import Foundation
 
-class User: NSObject{
-    
-    var name: String = ""
-    
-    static let sharedUser = User()
-    
-    private override init(){}
-}
+//class User: NSObject{
+//
+//    var name: String = ""
+//
+//    static let sharedUser = User()
+//
+//    private override init(){}
+//}
 

@@ -12,7 +12,7 @@ import FirebaseFirestore
 typealias Position = (Double, Double)
 typealias LocalArea = (Double,Double,Double,Double) // minX,maxX, minY,maxY
 let LOCATION_OFFSET = 0.00050
-let appUser = User.sharedUser
+//let appUser = User.sharedUser
 let storage = Firestore.firestore()
 
 
