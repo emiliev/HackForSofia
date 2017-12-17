@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 class RegisterViewController: UIViewController {
     
-    var ref: DatabaseReference!
+    // var ref: DatabaseReference!
 
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -24,7 +24,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Registration"
-        ref = Database.database().reference()
+        // ref = Database.database().reference()
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,7 +52,7 @@ class RegisterViewController: UIViewController {
                 }
                 
                 print("User registered in!")
-                sSelf.ref.child("data/users").updateChildValues(["\(Auth.auth().currentUser!.uid)": ["Username": firstName + " " + lastName]])
+                // sSelf.ref.child("data/users").updateChildValues(["\(Auth.auth().currentUser!.uid)": ["Username": firstName + " " + lastName]])
             }
         }
         

@@ -17,8 +17,21 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Login" 
-        // Do any additional setup after loading the view.
+        title = "Login"
+        
+        // TODO: Change eventually
+        try! Auth.auth().signOut()
+        
+        Auth.auth().addStateDidChangeListener { [weak self] (auth, user) in
+            guard let user = user else {
+                return
+            }
+            
+            let detailsViewController = self?.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as! ObjectDetailsViewController
+            self?.present(detailsViewController, animated: true, completion: nil)
+            print(user.email)
+            // self?.user = user
+        }
     }
 
     override func didReceiveMemoryWarning() {
