@@ -17,21 +17,6 @@ class ObjectDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Details"
-        
-        // TODO: Change eventually
-        try! Auth.auth().signOut()
-
-        Auth.auth().addStateDidChangeListener { [weak self] (auth, user) in
-            guard let user = user
-            else {
-                let loginViewController = self?.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-                self?.present(loginViewController, animated: true, completion: nil)
-                return
-            }
-
-            print(user.email)
-            self?.user = user
-        }
     }
 
     override func didReceiveMemoryWarning() {

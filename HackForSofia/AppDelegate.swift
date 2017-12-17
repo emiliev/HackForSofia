@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
+        
+        window?.tintColor = UIColor(red: 34 / 255, green: 139 / 255, blue: 34 / 255, alpha: 1)
 
         return true
     }
